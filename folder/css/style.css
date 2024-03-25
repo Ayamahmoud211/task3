@@ -1,0 +1,415 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+nav{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background-color:#2d3e50  ;
+    padding: 25px; 
+    position: fixed;
+    z-index: 10;
+}
+nav ul{
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+nav ul a::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    margin: 12px 0;
+    left: 0;
+    top: 10px ;
+    transition: 0.3s;
+}
+nav ul a:hover:after{
+    width: 100%;
+    box-shadow: 1px 1px 5px 1px white;
+}
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    background-color: #1bbc9b;
+    height: calc(100vh - 30px);
+    gap: 20px;  
+}
+.first .img{
+    background-color: #2d3e50;
+    border-radius: 65px;
+    width: 130px;
+    height: 109px;
+    position: relative;
+    bottom: -18px;
+}
+.first  .img img{
+    width: 176px;
+    position: absolute;
+    top: -28px;
+    left: -27px;
+}
+.first h1{
+    font-size: 36px;
+    color: white ;
+}
+.first p{
+    font-size: 17px;
+    color: white ;
+}
+.first .i{
+    position: relative;
+}
+.first .i::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 7px;
+    right: 25px;
+    color: white ;
+}
+.first .i::before{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 7px;
+    left: 25px;
+    color: white ;
+}
+.first .i .fa-solid{
+    color: white;
+}
+.second{
+    margin: 50px 0;
+}
+.second .portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.second .contaner .part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;   
+}
+.second .contaner .part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.second .contaner img{
+    width: 130px;
+    height: 130px;
+    border-radius: 64px;
+    padding: 10px 10px;
+    transform: translate(25% , 7%);
+}
+.second .part1 div ,.part2 div{
+    width:200px;
+    height: 150px;
+    border-radius: 15px;
+    margin: 0 10px;   
+}
+.second .part1 .img1{
+    background-color: rgb(196, 194, 194);
+    transition: 2s ;
+    transform: perspective(1000px) rotateY(0deg);
+}
+.second .part1 .img2{
+    background-color: red;
+    transition: 2s ;
+    transform: perspective(1000px) rotateY(0deg);
+}
+.second .part1 .img3{
+    background-color: blue;
+    transition: 2s ;
+    transform: perspective(1000px) rotateY(0deg);
+}
+.second .part2 .img4{
+    background-color: gray;
+    transition: 2s ;
+    transform: perspective(1000px) rotateY(0deg);
+}
+.second .part2 .img5{
+    background-color: #fff929;
+    transition: 2s ;
+    transform: perspective(1000px) rotateY(0deg);
+}
+.second .part2 .img6{
+    background-color: #00274f;
+    transition: 2s ;
+    transform: perspective(1000px) rotateY(0deg);
+}
+.second .ii{
+    position: relative;
+}
+.second .ii::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 7px;
+    right: 25px;
+    color: black ;
+}
+.second .ii::before{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 7px;
+    left: 25px;
+    color: black ;
+}
+.second .contaner  .img1:hover ,.second .contaner .img2:hover ,.second .contaner .img3:hover ,.second .contaner .img4:hover ,.second .contaner .img5:hover ,.second .contaner .img6:hover{
+    transform: perspective(1000px) rotateY(360deg);
+}
+.about{
+    background-color: #1bbc9b; 
+    padding: 50px 0 ;
+}
+.about .about1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 10px;
+}
+.about .paragraph{
+    width: 50%;
+    display: flex;
+    color: white;
+    gap: 20px;
+    margin-top: 20px;  
+}
+ h3{
+    font-size: 26px;
+}
+.about .iii{
+    position: relative;
+}
+.about .iii::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 7px;
+    right: 25px;
+    color: white ;
+}
+.about .iii::before{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 7px;
+    left: 25px;
+    color: white ;
+}
+.button{
+    background: none;
+    border: 1px solid white;
+    padding: 10px 10px;
+    color: white;  
+}
+.about .part5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact .contaner{
+    width: 50%; 
+     transform: translate(50%,10%);
+     margin-bottom: 90px;    
+}
+.contact .contaner .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;   
+}
+.contact .contaner .label{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+}
+.contact .contaner .label input , textarea{
+    border: none;
+    border-bottom: 1px solid gray;
+    position: relative;
+    width: 100%;
+    padding-bottom: 15px;
+}
+.contact .contaner .label input:focus , textarea:focus{
+    outline: none;
+}
+.contact .contaner .iiii::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 45px;
+    right: 213px;
+    color: black ;
+}
+.contact .contaner .iiii::before{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 45px;
+    left: 213px;
+    color: black ;
+}
+.contact .contaner  .label button{
+    padding: 10px;
+    width: 60px;
+    color: white;
+    background-color: #1bbc9b;
+    border: none;  
+}
+.contact .contaner  .label .button::after{
+    position: relative;
+    content: "";
+    width: 50%;
+    height: 180%;
+    background-color: black;  
+}
+footer .social{
+    background-color: #2d3e50;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.social  .p {
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 0;
+}
+.social .div1{
+    width: 170px;
+    text-align: center;
+}
+.social .div2{
+    width: 250px;
+    text-align: center;
+}
+.social .fa-brands {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 7px;
+    border-radius: 50%;
+}
+.social .div2 a{
+    color: #1bbc9b;
+}
+.teenyfooter{
+    background-color: #1b252f;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+}
+@media (min-width:768px) and (max-width:992px){
+    .about .part5 .paragraph {
+        width: 90%;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    .about .part5 .paragraph {
+        width: 90%;
+        }
+    .second .contaner img{
+            transform: translate(16% , 7%);
+        }
+    .contact .contaner .iiii::after{
+            right: 25px;
+        }
+    .contact .contaner .iiii::before{
+            left: 25px;
+        }
+        .contact .contaner .label input , textarea {
+            width: 140%;
+            transform: translatex(-60px);
+        }
+        .contact .contaner .label button{
+            transform: translate(-75px);
+        }
+        footer .social .media{
+            margin: 0 16px;
+            margin-bottom: 5px;
+        }
+ }
+ @media (min-width:320px) and (max-width:575px){
+    nav h2{font-size: 14px;}
+    nav ul li{
+        font-size: 12px;
+    }
+    nav{gap: 9px;}
+    main .first h1{font-size: 20px;}
+    main .first .i::after , main .first .i::before , main .second .ii::after , main .second .ii::before ,main .about .iii::after , main .about .iii::before{width: 50px;}
+    .second .contaner .part1 , .second .contaner .part2{flex-wrap: wrap}
+    .second .contaner .part1 div , .second .contaner .part2 div{margin-bottom: 5px;}
+    .about .part5 .paragraph {
+        width: 90%;
+    }
+    .contact .contaner .title{width: 100%;}
+    h3{font-size: 20px;}
+    .contact .contaner .iiii::after{
+        right: 98px;width: 50px;   
+    }
+.contact .contaner .iiii::before{
+        left: 98px;width: 50px;
+    }
+    .contact .contaner .label input , textarea {
+        width: 170%;
+        transform: translatex(-60px);
+    }
+    .contact .contaner .label button{
+        transform: translate(-75px);
+    }
+    footer .social{
+        flex-wrap: wrap;
+        gap: 5px; 
+    padding-bottom: 2px;}
+    footer .social .p{
+    color: #1bbc9b;} 
+    .about .paragraph{flex-wrap: wrap;}     
+ }
